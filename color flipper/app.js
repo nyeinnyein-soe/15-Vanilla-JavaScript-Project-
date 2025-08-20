@@ -15,14 +15,21 @@ const color = document.querySelector(".color")
 
 // button.addEventListener('click', () => oneRandomColor(colors))
 
-let currentindex = 0;
+// let currentindex = 0;
 
-button.addEventListener('click' , function (){
-    document.body.style.backgroundColor = colors[currentindex];
-    color.textContent = colors[currentindex]
-    currentindex++;
+// button.addEventListener('click' , function (){
+//     document.body.style.backgroundColor = colors[currentindex];
+//     color.textContent = colors[currentindex]
+//     currentindex++;
 
-    if(currentindex >= colors.length){
-        currentindex = 0;
-    }
+//     if(currentindex >= colors.length){
+//         currentindex = 0;
+//     }
+// })
+
+button.addEventListener('click',function(){
+    let randomNumber = Math.floor(Math.random(colors)*(colors.length));
+    console.log(randomNumber)
+    document.body.style.backgroundColor = colors[randomNumber];
+    color.textContent = colors[randomNumber];
 })
