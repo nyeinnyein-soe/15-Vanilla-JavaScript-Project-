@@ -38,5 +38,30 @@ decrease.addEventListener('click', function () {
 
 // Teacher resolve that challenge with that :
 
-// 
+// let count = 0;
+
+// const num = document.getElementById('value');
+// const btns = document.querySelectorAll('.btn');
+
+// // console.log(btns);
+
+// btns.forEach(function (btn){
+//     btn.addEventListener('click',function(btn){
+//         let styles = btn.currentTarget.classList;
+//         if(styles.contains('decrease')){
+//             count--;
+//             document.getElementById('value').style.color = "red";
+//         }
+//         else if(styles.contains('increase')){
+//             count++;
+//             document.getElementById('value').style.color = "green";
+//         }
+//         else{
+//             count = 0;
+//             document.getElementById('value').style.color = "black";
+//         }
+//         num.textContent = count;
+//     })
+// })
+
 
