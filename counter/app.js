@@ -36,3 +36,7 @@ decrease.addEventListener('click', function () {
     col();
 })
 
+// Teacher resolve that challenge with that :
+
+// 
+
