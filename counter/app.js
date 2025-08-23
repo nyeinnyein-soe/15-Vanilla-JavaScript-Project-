@@ -50,11 +50,11 @@ decrease.addEventListener('click', function () {
 //         let styles = btn.currentTarget.classList;
 //         if(styles.contains('decrease')){
 //             count--;
-//             document.getElementById('value').style.color = "red";
+//             if(count < 0) document.getElementById('value').style.color = "red";
 //         }
 //         else if(styles.contains('increase')){
 //             count++;
-//             document.getElementById('value').style.color = "green";
+//             if(count > 0) document.getElementById('value').style.color = "green";
 //         }
 //         else{
 //             count = 0;
