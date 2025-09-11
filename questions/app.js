@@ -69,3 +69,17 @@ const questionBtn = document.querySelectorAll('.question-btn');
 //     })
 // }
 // )
+
+// Combine teacher's idea and mine
+
+questions.forEach(function (question){
+    const plusBtn = question.querySelector('.plus-icon');
+    const minusBtn = question.querySelector('.minus-icon');
+
+    plusBtn.addEventListener('click',function(){
+        question.classList.toggle('show-text');
+    })
+    minusBtn.addEventListener('click',function(){
+        question.classList.remove('show-text');
+    })
+})
